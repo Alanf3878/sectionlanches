@@ -4,15 +4,14 @@ import Header from "../components/header";
 import Main from "../components/main";
 import "../pages/global/global.css";
 
-
 const Index = () => {
-  return ( 
+  return (
     <div>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Header />
+      <Main />
+      <Footer />
     </div>
-   );
-}
- 
+  );
+};
+
 export default Index;
