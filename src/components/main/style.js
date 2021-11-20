@@ -22,6 +22,6 @@ export const Line = styled.div`
 `;
 
 export const Main = styled.div`
-  height: 45vh;
+  height: 100%;
   width: 100%;
 `;

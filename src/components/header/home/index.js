@@ -20,15 +20,16 @@ const Home = () => {
   const { imghome, btnreserve, titlehome, texthome } = data.alldata.headers[0];
 
   return (
-    <S.Background back={imghome.url}>
+    <S.Background >
       <S.Container>
         <S.BoxTtitle>
           <S.Title>{titlehome}</S.Title>
+          <S.Text>{texthome}</S.Text>
           <S.Btn>{btnreserve}</S.Btn>
         </S.BoxTtitle>
-        <S.BoxParaghp>
-          <S.Text>{texthome}</S.Text>
-        </S.BoxParaghp>
+        <S.Img>
+          <img src ={imghome.url}/>
+        </S.Img>
       </S.Container>
     </S.Background>
   );

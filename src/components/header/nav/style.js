@@ -10,6 +10,7 @@ export const Nav = styled.div`
   justify-content: space-around;
   align-items: center;
   color: #cdcdcb;
+  font-size: 16px ;
 
   a {
     &:hover {

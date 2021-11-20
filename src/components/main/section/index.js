@@ -16,6 +16,8 @@ const Section = () => {
           background {
             url
           }
+         
+         
         }
       }
     }
@@ -32,12 +34,17 @@ const Section = () => {
   } = data.alldata.mains[0];
 
   return (
-    <S.Background back={background.url}>
+    <S.Background>
       <S.Container>
+      
+        <S.Img>
+        <img src = {background.url}/>
+        </S.Img>
+      
+        <S.Paragraph>
         <S.Title>
           <h2>{titlebackground}</h2>
         </S.Title>
-        <S.Paragraph>
           <ul>
             <li>{item1}</li>
             <li>{item2}</li>
@@ -47,6 +54,7 @@ const Section = () => {
           <p>{textbackground}</p>
         </S.Paragraph>
       </S.Container>
+     
     </S.Background>
   );
 };

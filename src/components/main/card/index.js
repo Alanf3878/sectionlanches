@@ -27,6 +27,9 @@ const Card = () => {
           title2
           title3
           title4
+          backgroundcard {
+            url
+          }
         }
       }
     }
@@ -45,27 +48,39 @@ const Card = () => {
     img2,
     img3,
     img4,
+    backgroundcard
   } = data.alldata.mains[0];
 
   return (
-    <S.Container>
+    <S.Container back={backgroundcard.url}>
       <S.Foodbox>
+      <S.Figure>
         <S.Img src={img1.url} />
+        </S.Figure>
         <p>{title1}</p>
         <S.Btn>{btn1}</S.Btn>
       </S.Foodbox>
       <S.Foodbox>
+        <S.Figure>
         <S.Img src={img2.url} />
+        </S.Figure>
+        
         <p>{title2}</p>
         <S.Btn>{btn2}</S.Btn>
       </S.Foodbox>
       <S.Foodbox>
+        <S.Figure>
         <S.Img src={img3.url} />
+        </S.Figure>
+        
         <p>{title3}</p>
         <S.Btn>{btn3}</S.Btn>
       </S.Foodbox>
       <S.Foodbox>
+        <S.Figure>
         <S.Img src={img4.url} />
+        </S.Figure>
+      
         <p>{title4}</p>
         <S.Btn>{btn4}</S.Btn>
       </S.Foodbox>
