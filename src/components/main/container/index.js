@@ -32,7 +32,7 @@ const Container = () => {
   return (
     <div>
         
-      <S.Container back = {backgroundcard.url}>
+      <S.Container>
     
           <S.Boxcontainer>
               <S.Img src = {imgbox1.url}/>

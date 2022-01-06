@@ -22,15 +22,20 @@ const Home = () => {
   return (
     <S.Background >
       <S.Container>
-        <S.BoxTtitle>
-          <S.Title>{titlehome}</S.Title>
-          <S.Text>{texthome}</S.Text>
-          <S.Btn>{btnreserve}</S.Btn>
-        </S.BoxTtitle>
-        <S.Img>
+      <S.Img>
           <img src ={imghome.url}/>
         </S.Img>
+        <S.BoxTtitle>
+          <h1>{titlehome}</h1>
+          <p>{texthome}</p>
+        <button>{btnreserve}</button>
+        </S.BoxTtitle>
+      
       </S.Container>
+      <S.Section>
+        <h3>Favoritos da Galera</h3>
+      </S.Section>
+      
     </S.Background>
   );
 };

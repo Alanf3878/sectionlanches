@@ -1,62 +1,125 @@
 import styled from "styled-components";
-
 export const Background = styled.div`
-  width: 100%;
   height: 80vh;
-  background-color: #EEAD2D;
-  box-shadow: rgb(0 0 0 / 10%) 0px 3px 10px;
+  width: 100%;
   display: flex;
   align-items: center;
 `;
 export const Container = styled.div`
   color: #fff;
+  max-width: 1333px;
   width: 100%;
-  height: 60%;
+  margin: 0 auto;
+
+  height: 50vh;
   display: flex;
-  background-color: red;
-  box-shadow: rgb(0 0 0 / 100%) 0px 3px 10px;
   justify-content: center;
-  padding: 4rem;
+  background-color: #353433;
+  box-shadow: rgb(0 0 0 / 100%) 0px 3px 10px;
+  position: relative;
+  @media (max-width: 1300px) {
+    justify-content: flex-start;
+    padding-left: 4rem;
+  }
+  @media (max-width: 880px) {
+    padding: 0;
+  }
 `;
 
 export const Title = styled.div`
-  font-size: 50px;
   width: 100%;
   text-align: center;
-  
+  color: yellow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 100px;
+
+    @media (max-width: 1020px) {
+      font-size: 70px;
+    }
+    @media (max-width: 880px) {
+      font-size: 50px;
+    }
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
+  }
 `;
 export const Paragraph = styled.div`
-  max-width: 800px;
-  height: 100%;
+  width: 600px;
+
   display: flex;
   flex-wrap: wrap;
-  align-content:space-around;
-  justify-content: center;
   text-align: center;
   color: gold;  
+  padding: 2rem;
   border-radius: 40px;
-  padding: 1rem;
-  color: #fff;
+  color: yellow;
+
+  @media (max-width: 1020px) {
+      width:500px;
+      height: 80%;
+
+  }
+  @media (max-width: 880px) {
+      width:350px;
+     
+      height: 80%;
+
+  }
+  @media (max-width: 500px) {
+      width:290px;
+     
+      height: 100%;
+
+  }
+
+ 
+
+ 
+   
+   
+
 
   ul {
     width: 100%;
-    list-style: none;
     font-size: 30px;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 40px;
+  
+    align-items: center;
+  @media (max-width: 880px) {
+    font-size: 18px;
+
+  }
+ 
   }
 `;
 
 export const Img = styled.figure`
-
-
-img {
   width: 450px;
-  max-height: 1000px;
-  
-  position: relative;
-  bottom: 250px;
-}
-`
+  position: absolute;
+  right: 1px;
+  bottom: -190px;
+
+  @media (max-width: 1020px) {
+    right: -20px;
+    width: 400px;
+    bottom: -150px;
+  }
+  @media (max-width: 700px) {
+    right: -10px;
+    width: 200px;
+    bottom: 50px;
+  }
+
+  img {
+    width: 100%;
+  }
+`;

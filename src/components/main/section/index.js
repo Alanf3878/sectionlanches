@@ -30,29 +30,33 @@ const Section = () => {
     item2,
     item3,
     item4,
-    background,
+    background
   } = data.alldata.mains[0];
 
   return (
     <S.Background>
       <S.Container>
-      
-        <S.Img>
-        <img src = {background.url}/>
-        </S.Img>
-      
         <S.Paragraph>
-        <S.Title>
+          <S.Title>
           <h2>{titlebackground}</h2>
-        </S.Title>
+          </S.Title>
+        
+        
+       
           <ul>
             <li>{item1}</li>
             <li>{item2}</li>
             <li>{item3}</li>
             <li>{item4}</li>
           </ul>
+          <S.Title>
           <p>{textbackground}</p>
+          </S.Title>
+       
         </S.Paragraph>
+        <S.Img>
+        <img src = {background.url}/>
+        </S.Img>
       </S.Container>
      
     </S.Background>

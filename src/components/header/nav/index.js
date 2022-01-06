@@ -13,9 +13,11 @@ const Nav = () => {
           about
           home
           reservation
-          logo {
+          logo{
             url
           }
+          
+         
         }
       }
     }

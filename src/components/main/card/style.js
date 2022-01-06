@@ -7,13 +7,11 @@ export const Container = styled.div`
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding-top: 3rem;
   flex-wrap: wrap;
-  background-image: url(${(props) => props.back});
-  background-repeat: repeat;
-  background-size: 15%;
+
 `;
 
 export const Foodbox = styled.div`
@@ -31,6 +29,11 @@ export const Foodbox = styled.div`
   margin-bottom: 1rem;
   p{
     color: #fff;
+  }
+
+  @media (max-width: 1231px) {
+    margin-top: 3rem;
+ 
   }
 `;
 
@@ -60,5 +63,18 @@ export const Btn = styled.button`
 
 export const Figure = styled.figure`
 width: 50%;
+`
+export const SectionBox = styled.div`
+display:flex ;
+max-width: 1333px;
+height: 50vh ;
+width: 100%;
+margin: 0 auto;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 1rem;
+border-radius:40px;
+
+
 `
 

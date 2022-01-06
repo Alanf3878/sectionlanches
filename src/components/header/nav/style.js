@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-  width: 100%;
+  max-width: 1333px;
+  margin: 0 auto;
+
   height: 9rem;
-  background-color: #000;
   opacity: 0.9;
   box-shadow: rgb(0 0 0 / 10%) 0px 3px 10px;
   display: flex;
@@ -13,6 +14,7 @@ export const Nav = styled.div`
   font-size: 16px ;
 
   a {
+    color: #000;
     &:hover {
       color: #f8ca11;
       cursor: pointer;

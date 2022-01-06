@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-background-image: url(${props => props.back});
-background-repeat: repeat;
-  background-size: 20%;
-width: 100% ;
+
+max-width: 1333px;
+margin: 0 auto;
 height: 60vh;
 display: flex;
 align-items: center;
@@ -21,14 +20,14 @@ height: 200px;
 export const Boxcontainer = styled.div`
 width: 35%;
 height: 80%;
+background-color: #353433;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-around;
-background-color: #EEAD2D;
 padding: 10px 0.2em 0 0.6em;
   border-radius: 10px;
-box-shadow: rgb(0 0 0 / 30%) 0px 20px 10px;
+
 
 p {
   color: #fff;
